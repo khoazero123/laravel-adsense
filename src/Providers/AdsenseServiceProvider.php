@@ -37,6 +37,7 @@ namespace CryptoTech\Laravel\Adsense\Providers;
 
 use CryptoTech\Laravel\Adsense\AdsenseBuilder;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Lumen\Application as LumenApplication;
 
 /**
  * Class AdsenseServiceProvider.
@@ -47,47 +48,52 @@ class AdsenseServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        $configFile = __DIR__.'/../resources/config/adsense.php';
-
-        if ($this->isLumen()) {
+        if ($this->app instanceof LumenApplication) {
             $this->app->configure('adsense');
         } else {
             $this->publishes([
-                $configFile => config_path('adsense.php'),
-            ]);
+                $this->getConfigFile() => config_path('adsense-ads.php'),
+            ], 'config');
         }
-
-        $this->mergeConfigFrom($configFile, 'adsense');
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'adsense');
     }
 
     /**
-     * Register any application services.
-     *
-     * @return void
+     * {@inheritDoc}
      */
-    public function register()
+    public function register(): void
     {
+        $this->mergeConfigFrom(
+            $this->getConfigFile(),
+            'adsense'
+        );
+
         $this->app->bind(AdsenseBuilder::class, function () {
             return new AdsenseBuilder();
         });
     }
 
     /**
-     * Get the services provided by the provider.
-     *
-     * @return array
+     * {@inheritDoc}
      */
-    public function provides()
+    public function provides(): array
     {
         return [
             'adsense',
         ];
+    }
+
+    /**
+     * Return the path of configuration file.
+     *
+     * @return string
+     */
+    protected function getConfigFile(): string
+    {
+        return __DIR__.'/../resources/config/adsense-ads.php';
     }
 }

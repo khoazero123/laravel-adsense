@@ -71,6 +71,7 @@ $config = Config::create()
         'no_php4_constructor' => true,
         'no_short_echo_tag' => true,
         'no_superfluous_elseif' => true,
+        'no_superfluous_phpdoc_tags' => false,
         'no_unneeded_curly_braces' => true,
         'no_unreachable_default_argument_value' => true,
         'no_unset_on_property' => true,
