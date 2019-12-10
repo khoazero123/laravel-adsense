@@ -3,6 +3,7 @@
 [![Latest Version][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
+[![StyleCI][ico-styleci]][link-styleci]
 
 Package for easily including Google Adsense Ad units in [Laravel 6.0+](https://laravel.com/) and [Lumen](https://lumen.laravel.com/). For use it with Laravel 5.x use original [Mastergalen/Adsense-Ads package](https://github.com/Mastergalen/Adsense-Ads).
 
@@ -155,10 +156,12 @@ Please see the [LICENSE.md](LICENSE.md) file for more information.
 [ico-version]: https://img.shields.io/packagist/v/crypto-technology/laravel-adsense.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/crypto-technology/laravel-adsense.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/crypto-technology/laravel-adsense/master.svg?style=flat-square
+[ico-styleci]: https://styleci.io/repos/211677362/shield?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/crypto-technology/laravel-adsense
 [link-downloads]: https://packagist.org/packages/crypto-technology/laravel-adsense
 [link-travis]: https://travis-ci.org/crypto-technology/laravel-adsense
+[link-styleci]: https://styleci.io/repos/211677362
 [link-author]: https://cryptotech.srl
 [link-coauthor]: https://bogny.eu
 [link-contributors]: ../../contributors
