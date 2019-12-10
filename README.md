@@ -1,8 +1,8 @@
 # Google Adsense Ads for Laravel 6.0+
 
-[![License](https://poser.pugx.org/crypto-technology/laravel-adsense/license.svg)](https://packagist.org/packages/crypto-technology/laravel-adsense)
-[![Latest Stable Version](https://poser.pugx.org/crypto-technology/laravel-adsense/v/stable.svg)](https://packagist.org/packages/crypto-technology/laravel-adsense)
-[![Total Downloads](https://poser.pugx.org/crypto-technology/laravel-adsense/d/total.svg)](https://packagist.org/packages/crypto-technology/laravel-adsense)
+[![Latest Version][ico-version]][link-packagist]
+[![Total Downloads][ico-downloads]][link-downloads]
+[![Build Status][ico-travis]][link-travis]
 
 Package for easily including Google Adsense Ad units in [Laravel 6.0+](https://laravel.com/) and [Lumen](https://lumen.laravel.com/). For use it with Laravel 5.x use original [Mastergalen/Adsense-Ads package](https://github.com/Mastergalen/Adsense-Ads).
 
@@ -24,7 +24,7 @@ composer require crypto-technology/laravel-adsense
 
 Run `php artisan config:publish crypto-technology/laravel-adsense`.
 
-Edit the generated config file in `/config/adsense.php` to add your ad units
+Edit the generated config file in `/config/adsense-ads.php` to add your ad units
 
 ```php
 return [
@@ -122,9 +122,9 @@ or
 php artisan vendor:publish --provider="CryptoTech\Laravel\Adsense\Providers\AdsenseServiceProvider"
 ```
 
-> Lumen does not support this command, for it you should copy the file `src/resources/config/adsense.php` to `config/adsense.php` of your project
+> Lumen does not support this command, for it you should copy the file `src/resources/config/adsense-ads.php` to `config/adsense-ads.php` of your project
 
-In `adsense.php` configuration file you can determine the properties of the default values and some behaviors.
+In `adsense-ads.php` configuration file you can determine the properties of the default values and some behaviors.
 
 ## Usage
 Add `{!! Adsense::javascript() !!}` in your `<head>` tag.
@@ -133,6 +133,32 @@ To show ads, add `{!! Adsense::ads('ads_unit') !!}`, where `ads_unit` is one of 
 
 Use `{!! Adsense::ads('ads_unit') !!}` every time you want to show an ad.
 
+## Changelog
+
+Please see the [CHANGELOG.md](CHANGELOG.md) file for more information on what has changed recently.
+
+## Security
+
+If you discover any security related issues, please email security@cryptotech.srl instead of using the issue tracker.
+
+## Credits
+
+- [Crypto Technology srl][link-author]
+- [Luca Bognolo][link-coauthor]
+- [All Contributors][link-contributors]
+
 ## License
 
-The Google Adsense Ads is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Google Adsense Ads is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).  
+Please see the [LICENSE.md](LICENSE.md) file for more information.
+
+[ico-version]: https://img.shields.io/packagist/v/crypto-technology/laravel-adsense.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/crypto-technology/laravel-adsense.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/crypto-technology/laravel-adsense/master.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/crypto-technology/laravel-adsense
+[link-downloads]: https://packagist.org/packages/crypto-technology/laravel-adsense
+[link-travis]: https://travis-ci.org/crypto-technology/laravel-adsense
+[link-author]: https://cryptotech.srl
+[link-coauthor]: https://bogny.eu
+[link-contributors]: ../../contributors
