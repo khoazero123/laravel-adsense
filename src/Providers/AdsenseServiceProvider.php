@@ -40,6 +40,8 @@ use Illuminate\Support\ServiceProvider;
 
 /**
  * Class AdsenseServiceProvider.
+ *
+ * @see \Illuminate\Support\ServiceProvider
  */
 class AdsenseServiceProvider extends ServiceProvider
 {

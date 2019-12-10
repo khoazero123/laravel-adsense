@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "CryptoTech\\Laravel\\Adsense\\AdsenseServiceProvider"
+                "CryptoTech\\Laravel\\Adsense\\Providers\\AdsenseServiceProvider"
             ],
             "aliases": {
                 "Adsense": "CryptoTech\\Laravel\\Adsense\\Facades\\AdsenseFacade"

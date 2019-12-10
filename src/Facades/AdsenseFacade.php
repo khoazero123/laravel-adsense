@@ -38,7 +38,9 @@ namespace CryptoTech\Laravel\Adsense\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Illuminate\Html\HtmlBuilder
+ * Class AdsenseFacade.
+ *
+ * @see \Illuminate\Support\Facades\Facade
  */
 class AdsenseFacade extends Facade
 {
