@@ -4,8 +4,9 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
+[![License][ico-license]][link-license]
 
-Package for easily including Google Adsense Ad units in [Laravel 6.0+](https://laravel.com/) and [Lumen](https://lumen.laravel.com/). For use it with Laravel 5.x use original [Mastergalen/Adsense-Ads package](https://github.com/Mastergalen/Adsense-Ads).
+Package for easily including Google Adsense Ad units in [Laravel 6.0+][link-laravel] and [Lumen][link-lumen]. For use it with Laravel 5.x use original [Mastergalen/Adsense-Ads package][link-mastergalen-adsense].
 
 ## Installation
 
@@ -13,7 +14,7 @@ Package for easily including Google Adsense Ad units in [Laravel 6.0+](https://l
 
 In your project root run
 
-The first step is using composer to install the package and automatically update your `composer.json` file, you can do this by running:
+The first step is using [Composer][link-composer] to install the package and automatically update your `composer.json` file, you can do this by running:
 
 ```shell
 composer require crypto-technology/laravel-adsense
@@ -90,7 +91,7 @@ return $app;
 
 You may get access to the Google Adsense Ads services using following facades:
 
-- `CryptoTech\Laravel\Adsense\Facades\Adsense`
+- `CryptoTech\Laravel\Adsense\Facades\AdsenseFacade`
 
 You can setup a short-version aliases for these facades in your `config/app.php` file. For example:
 
@@ -100,7 +101,7 @@ You can setup a short-version aliases for these facades in your `config/app.php`
 return [
     // ...
     'aliases' => [
-        'Adsense' => CryptoTech\Laravel\Adsense\Facades\Adsense::class,
+        'Adsense' => CryptoTech\Laravel\Adsense\Facades\AdsenseFacade::class,
         // ...
     ],
     // ...
@@ -123,7 +124,7 @@ or
 php artisan vendor:publish --provider="CryptoTech\Laravel\Adsense\Providers\AdsenseServiceProvider"
 ```
 
-> Lumen does not support this command, for it you should copy the file `src/resources/config/adsense-ads.php` to `config/adsense-ads.php` of your project
+> Lumen does not support this command, for it you should copy the file `src/resources/config/adsense-ads.php` to `config/adsense-ads.php` of your project.
 
 In `adsense-ads.php` configuration file you can determine the properties of the default values and some behaviors.
 
@@ -136,7 +137,7 @@ Use `{!! Adsense::ads('ads_unit') !!}` every time you want to show an ad.
 
 ## Changelog
 
-Please see the [CHANGELOG.md](CHANGELOG.md) file for more information on what has changed recently.
+Please see the [CHANGELOG.md][link-changelog] file for more information on what has changed recently.
 
 ## Security
 
@@ -150,18 +151,27 @@ If you discover any security related issues, please email security@cryptotech.sr
 
 ## License
 
-The Google Adsense Ads is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).  
-Please see the [LICENSE.md](LICENSE.md) file for more information.
+The Google Adsense Ads is open-sourced software licensed under the [MIT license][link-mit-license].  
+Please see the [LICENSE.md][link-license] file for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/crypto-technology/laravel-adsense.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/crypto-technology/laravel-adsense.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/crypto-technology/laravel-adsense/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/211677362/shield?style=flat-square
+[ico-license]: https://img.shields.io/packagist/l/crypto-technology/laravel-adsense.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/crypto-technology/laravel-adsense
 [link-downloads]: https://packagist.org/packages/crypto-technology/laravel-adsense
 [link-travis]: https://travis-ci.org/crypto-technology/laravel-adsense
 [link-styleci]: https://styleci.io/repos/211677362
+[link-scrutinizer]: https://scrutinizer-ci.com/g/crypto-technology/cryptocurrency/?branch=master
+[link-laravel]: https://laravel.com
+[link-lumen]: https://lumen.laravel.com
+[link-mastergalen-adsense]: https://github.com/Mastergalen/Adsense-Ads
+[link-composer]: https://getcomposer.org
+[link-license]: LICENSE.md
+[link-changelog]: CHANGELOG.md
 [link-author]: https://cryptotech.srl
 [link-coauthor]: https://bogny.eu
 [link-contributors]: ../../contributors
+[link-mit-license]: https://opensource.org/licenses/MIT
