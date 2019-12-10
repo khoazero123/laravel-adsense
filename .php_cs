@@ -4,12 +4,13 @@ use PhpCsFixer\Finder;
 use PhpCsFixer\Config;
 
 $header = <<<EOF
-Google Adsense Ads for Laravel
+Google Adsense Ads for Laravel.
 
 Package for easily including Google Adsense Ad units
 in Laravel and Lumen.
 
 @developer Crypto Technology srl <https://cryptotech.srl/>
+
 @copyright Copyright (c) 2019 Crypto Technology srl
 @license   MIT
 
