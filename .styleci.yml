@@ -4,11 +4,7 @@ risky: false
 
 enabled:
   - unalign_double_arrow
-  - concat_with_spaces
   - not_operator_with_space
-
-disabled:
-  - concat_without_spaces
 
 finder:
   exclude:
