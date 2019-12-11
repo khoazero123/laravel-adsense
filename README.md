@@ -4,6 +4,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
+[![Scrutinizer][ico-scrutinizer]][link-scrutinizer]
 [![License][ico-license]][link-license]
 
 Package for easily including Google Adsense Ad units in [Laravel 6.0+][link-laravel] and [Lumen][link-lumen]. For use it with Laravel 5.x use original [Mastergalen/Adsense-Ads package][link-mastergalen-adsense].
@@ -158,6 +159,7 @@ Please see the [LICENSE.md][link-license] file for more information.
 [ico-downloads]: https://img.shields.io/packagist/dt/crypto-technology/laravel-adsense.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/crypto-technology/laravel-adsense/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/211677362/shield?style=flat-square
+[ico-scrutinizer]: https://scrutinizer-ci.com/g/crypto-technology/cryptocurrency/badges/quality-score.png?b=master
 [ico-license]: https://img.shields.io/packagist/l/crypto-technology/laravel-adsense?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/crypto-technology/laravel-adsense
