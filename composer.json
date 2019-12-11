@@ -30,6 +30,11 @@
             "CryptoTech\\Laravel\\Adsense\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "CryptoTech\\Laravel\\Adsense\\Tests\\": "tests"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
@@ -41,6 +46,7 @@
         }
     },
     "scripts": {
+        "test": "composer dump-autoload && phpunit --configuration phpunit.xml",
         "php-cs-fixer": "php-cs-fixer fix . --verbose --show-progress=estimating --dry-run --diff"
     },
     "config": {

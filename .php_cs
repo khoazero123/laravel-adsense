@@ -81,6 +81,9 @@ $config = Config::create()
         'not_operator_with_space' => true,
         'not_operator_with_successor_space' => true,
         'ordered_imports' => ['sortAlgorithm' => 'alpha'],
+        'php_unit_method_casing' => true,
+        'php_unit_strict' => true,
+        'php_unit_test_annotation' => ['style' => 'prefix'], // or 'annotation'
         'phpdoc_add_missing_param_annotation' => true, //['only_untyped' => false],
         'phpdoc_annotation_without_dot' => false,
         'phpdoc_no_empty_return' => false,

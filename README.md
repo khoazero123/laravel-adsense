@@ -158,7 +158,7 @@ Please see the [LICENSE.md][link-license] file for more information.
 [ico-downloads]: https://img.shields.io/packagist/dt/crypto-technology/laravel-adsense.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/crypto-technology/laravel-adsense/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/211677362/shield?style=flat-square
-[ico-license]: https://img.shields.io/packagist/l/crypto-technology/laravel-adsense.svg?style=flat-square
+[ico-license]: https://img.shields.io/packagist/l/crypto-technology/laravel-adsense?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/crypto-technology/laravel-adsense
 [link-downloads]: https://packagist.org/packages/crypto-technology/laravel-adsense
