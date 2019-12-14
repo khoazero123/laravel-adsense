@@ -90,8 +90,6 @@ class AdsenseServiceProvider extends ServiceProvider
 
     /**
      * Return the path of configuration file.
-     *
-     * @return string
      */
     protected function getConfigFile(): string
     {
