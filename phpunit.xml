@@ -17,7 +17,15 @@
          verbose="true">
     <testsuites>
         <testsuite name="Laravel Google Adsense Ads Tests Suite">
-            <directory>tests</directory>
+            <directory>./tests</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-clover" target="clover.xml" />
+    </logging>
 </phpunit>
