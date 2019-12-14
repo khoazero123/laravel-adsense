@@ -5,6 +5,7 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 [![Scrutinizer][ico-scrutinizer]][link-scrutinizer]
+[![Code Coverage][ico-coverage]][link-coverage]
 [![License][ico-license]][link-license]
 
 Package for easily including Google Adsense Ad units in [Laravel 6.0+][link-laravel] and [Lumen][link-lumen]. For use it with Laravel 5.x use original [Mastergalen/Adsense-Ads package][link-mastergalen-adsense].
@@ -160,6 +161,7 @@ Please see the [LICENSE.md][link-license] file for more information.
 [ico-travis]: https://img.shields.io/travis/crypto-technology/laravel-adsense/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/211677362/shield?style=flat-square
 [ico-scrutinizer]: https://scrutinizer-ci.com/g/crypto-technology/cryptocurrency/badges/quality-score.png?b=master
+[ico-coverage]: https://scrutinizer-ci.com/g/crypto-technology/laravel-adsense/badges/coverage.png
 [ico-license]: https://img.shields.io/packagist/l/crypto-technology/laravel-adsense?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/crypto-technology/laravel-adsense
@@ -167,6 +169,7 @@ Please see the [LICENSE.md][link-license] file for more information.
 [link-travis]: https://travis-ci.org/crypto-technology/laravel-adsense
 [link-styleci]: https://styleci.io/repos/211677362
 [link-scrutinizer]: https://scrutinizer-ci.com/g/crypto-technology/cryptocurrency/?branch=master
+[link-coverage]: https://scrutinizer-ci.com/g/crypto-technology/laravel-adsense
 [link-laravel]: https://laravel.com
 [link-lumen]: https://lumen.laravel.com
 [link-mastergalen-adsense]: https://github.com/Mastergalen/Adsense-Ads
