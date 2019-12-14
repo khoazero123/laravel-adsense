@@ -17,7 +17,6 @@ enabled:
   - phpdoc_order
   - phpdoc_separation
   - pow_to_exponentiation
-  - psr4
   - random_api_migration
   - single_trait_insert_per_statement
   - ternary_to_null_coalescing
