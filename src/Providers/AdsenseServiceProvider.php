@@ -55,7 +55,7 @@ class AdsenseServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'adsense');
 
         if ($this->app instanceof LumenApplication) {
-            /** @scrutinizer ignore-call */ $this->app->configure('adsense');
+            /* @scrutinizer ignore-call */ $this->app->configure('adsense');
         } else {
             // Publishing the configuration file.
             $this->publishes([
