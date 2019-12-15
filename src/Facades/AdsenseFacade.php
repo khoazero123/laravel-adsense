@@ -43,12 +43,10 @@ use Illuminate\Support\Facades\Facade;
  *
  * @see \Illuminate\Support\Facades\Facade
  */
-class AdsenseFacade extends Facade
+final class AdsenseFacade extends Facade
 {
     /**
-     * Get the registered name of the component.
-     *
-     * @return string
+     * {@inheritdoc}
      */
     protected static function getFacadeAccessor()
     {

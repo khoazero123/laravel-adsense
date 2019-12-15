@@ -38,13 +38,13 @@ namespace CryptoTech\Laravel\Adsense\Providers;
 
 use CryptoTech\Laravel\Adsense\AdsenseBuilder;
 use Illuminate\Support\ServiceProvider;
-/* @scrutinizer ignore-type */ use Laravel\Lumen\Application as LumenApplication;
+use Laravel\Lumen\Application as LumenApplication;
 
- /**
-  * Class AdsenseServiceProvider.
-  *
-  * @see \Illuminate\Support\ServiceProvider
-  */
+/**
+ * Class AdsenseServiceProvider.
+ *
+ * @see \Illuminate\Support\ServiceProvider
+ */
 class AdsenseServiceProvider extends ServiceProvider
 {
     /**
@@ -52,15 +52,20 @@ class AdsenseServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'adsense');
+
         if ($this->app instanceof LumenApplication) {
             /* @scrutinizer ignore-call */ $this->app->configure('adsense');
         } else {
+            // Publishing the configuration file.
             $this->publishes([
                 $this->getConfigFile() => config_path('adsense-ads.php'),
             ], 'config');
+            // Publishing the views.
+            $this->publishes([
+                __DIR__.'/../resources/views' => resource_path('views/vendor/adsense'),
+            ], 'adsense.views');
         }
-
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'adsense');
     }
 
     /**
