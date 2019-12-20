@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2] - 2019-12-20
+### Added
+- Added new tests
+
+### Fixed
+- Fixed error on binding class
+- Fixed some PhpDoc
+
 ## [1.1] - 2019-12-15
 ### Fixed
 - Fixed missing of publishing views
@@ -48,7 +56,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/crypto-technology/laravel-adsense/compare/v1.1...HEAD
+[Unreleased]: https://github.com/crypto-technology/laravel-adsense/compare/v1.2...HEAD
+[1.2]: https://github.com/crypto-technology/laravel-adsense/compare/v1.1...v1.2
 [1.1]: https://github.com/crypto-technology/laravel-adsense/compare/v1.0...v1.1
 [1.0]: https://github.com/crypto-technology/laravel-adsense/compare/v0.1.5...v1.0
 [0.1.5]: https://github.com/crypto-technology/laravel-adsense/compare/v0.1.4...v0.1.5
