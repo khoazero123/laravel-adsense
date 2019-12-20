@@ -81,6 +81,8 @@ class AdsenseServiceProvider extends ServiceProvider
         $this->app->bind(AdsenseBuilder::class, function () {
             return new AdsenseBuilder();
         });
+
+        $this->app->alias(AdsenseBuilder::class, 'adsense');
     }
 
     /**
