@@ -41,6 +41,9 @@ use Illuminate\Support\Facades\Facade;
 /**
  * Class AdsenseFacade.
  *
+ * @method static \Illuminate\View\View|\Illuminate\Contracts\View\Factory ads(string $ads)
+ * @method static \Illuminate\View\View|\Illuminate\Contracts\View\Factory javascript()
+ *
  * @see \Illuminate\Support\Facades\Facade
  */
 final class AdsenseFacade extends Facade

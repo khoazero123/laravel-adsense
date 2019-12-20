@@ -64,7 +64,7 @@ class AdsenseServiceProvider extends ServiceProvider
             // Publishing the views.
             $this->publishes([
                 __DIR__.'/../resources/views' => resource_path('views/vendor/adsense'),
-            ], 'adsense.views');
+            ], 'views');
         }
     }
 
@@ -91,6 +91,7 @@ class AdsenseServiceProvider extends ServiceProvider
     public function provides(): array
     {
         return [
+            AdsenseBuilder::class,
             'adsense',
         ];
     }

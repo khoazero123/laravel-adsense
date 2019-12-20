@@ -36,14 +36,36 @@ declare(strict_types=1);
 
 namespace CryptoTech\Laravel\Adsense\Tests;
 
+use CryptoTech\Laravel\Adsense\Facades\AdsenseFacade;
+use Illuminate\View\View;
+
 /**
  * Class AdsenseTest.
  */
 class AdsenseTest extends TestCase
 {
-    public function testAdsense()
+    /** @var \CryptoTech\Laravel\Adsense\AdsenseBuilder $adsense */
+    protected $adsense;
+
+    public function setUp(): void
+    {
+        parent::setUp();
+        $this->adsense = $this->app->make('adsense');
+    }
+
+    public function testAdsenseInstance()
+    {
+        $this->assertInstanceOf(View::class, $this->adsense->javascript());
+    }
+
+    public function testAdsenseView()
     {
         $return = $this->app->view->make('adsense::javascript')->render();
         $this->assertSame("<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\n<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>\n", $return);
+    }
+
+    public function testAdsenseFacade()
+    {
+        $this->assertIsObject(AdsenseFacade::javascript());
     }
 }

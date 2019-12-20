@@ -36,6 +36,7 @@ declare(strict_types=1);
 
 namespace CryptoTech\Laravel\Adsense\Tests;
 
+use CryptoTech\Laravel\Adsense\Facades\AdsenseFacade;
 use CryptoTech\Laravel\Adsense\Providers\AdsenseServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -51,6 +52,16 @@ abstract class TestCase extends Orchestra
     {
         return [
             AdsenseServiceProvider::class,
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function getPackageAliases($app)
+    {
+        return [
+            'Adsense' => AdsenseFacade::class,
         ];
     }
 
