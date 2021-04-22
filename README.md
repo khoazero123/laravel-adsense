@@ -161,7 +161,7 @@ Please see the [LICENSE.md][link-license] file for more information.
 
 [link-packagist]: https://packagist.org/packages/martinbutt/laravel-adsense
 [link-downloads]: https://packagist.org/packages/martinbutt/laravel-adsense
-[link-travis]: https://travis-ci.org/martinbutt/laravel-adsense
+[link-travis]: https://travis-ci.com/martinbutt/laravel-adsense
 [link-styleci]: https://styleci.io/repos/359045604
 [link-scrutinizer]: https://scrutinizer-ci.com/g/martinbutt/laravel-adsense/?branch=master
 [link-coverage]: https://scrutinizer-ci.com/g/martinbutt/laravel-adsense
