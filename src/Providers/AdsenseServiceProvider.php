@@ -37,9 +37,9 @@ declare(strict_types=1);
 
 namespace MartinButt\Laravel\Adsense\Providers;
 
-use MartinButt\Laravel\Adsense\AdsenseBuilder;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
+use MartinButt\Laravel\Adsense\AdsenseBuilder;
 
 /**
  * Class AdsenseServiceProvider.
