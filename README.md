@@ -1,4 +1,4 @@
-# Google Adsense Ads for Laravel 6.0+
+# Google Adsense Ads for Laravel 6.x, 7.x and 8.x
 
 [![Latest Version][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
@@ -8,7 +8,7 @@
 [![Code Coverage][ico-coverage]][link-coverage]
 [![License][ico-license]][link-license]
 
-Package for easily including Google Adsense Ad units in [Laravel 6.x and 7.x][link-laravel] and [Lumen][link-lumen]. For use with Laravel 5.x use original [Mastergalen/Adsense-Ads package][link-mastergalen-adsense].
+Package for easily including Google Adsense Ad units in [Laravel 6.x, 7.x and 8.x][link-laravel] and [Lumen][link-lumen]. For use with Laravel 5.x use original [Mastergalen/Adsense-Ads package][link-mastergalen-adsense].
 
 ## Installation
 

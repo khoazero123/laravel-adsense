@@ -1,6 +1,6 @@
 {
     "name": "martinbutt/laravel-adsense",
-    "description": "Display Adsense ads easily in Laravel.",
+    "description": "Display Adsense ads easily in Laravel 6.x, 7.x and 8.x",
     "keywords": [ "laravel", "adsense", "ads" ],
     "type": "library",
     "license": "MIT",
@@ -23,7 +23,7 @@
     },
     "require": {
         "php": "^7.2",
-        "illuminate/view": "^6.0||^7.0"
+        "illuminate/view": "^6.0||^7.0||^8.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
