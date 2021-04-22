@@ -1,4 +1,3 @@
-<!-- Mods Center Responsive -->
 <ins class="adsbygoogle"
     style="{!! $ad_style !!}"
     data-ad-client="{!! $ad_client !!}"
