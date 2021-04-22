@@ -22,7 +22,7 @@
         "source": "https://github.com/martinbutt/laravel-adsense/"
     },
     "require": {
-        "php": "^7.2",
+        "php": "^7.2||^8.0",
         "illuminate/view": "^6.0||^7.0||^8.0"
     },
     "require-dev": {
