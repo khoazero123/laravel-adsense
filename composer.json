@@ -1,5 +1,5 @@
 {
-    "name": "MartinButt/laravel-adsense",
+    "name": "martinbutt/laravel-adsense",
     "description": "Display Adsense ads easily in Laravel.",
     "keywords": [ "laravel", "adsense", "ads" ],
     "type": "library",
