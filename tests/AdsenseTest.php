@@ -62,7 +62,7 @@ class AdsenseTest extends TestCase
     public function testAdsenseView()
     {
         $return = $this->app->view->make('adsense::javascript')->render();
-        $this->assertSame("<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\n<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>\n", $return);
+        $this->assertSame('<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-123" crossorigin="anonymous"></script>', $return);
     }
 
     public function testAdsenseFacade()

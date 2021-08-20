@@ -72,5 +72,6 @@ abstract class TestCase extends Orchestra
     protected function getEnvironmentSetUp($app)
     {
         $app['config']->set('view.paths', [__DIR__.'/stubs/views']);
+        $app['config']->set('adsense.client_id', 'ca-pub-123');
     }
 }
