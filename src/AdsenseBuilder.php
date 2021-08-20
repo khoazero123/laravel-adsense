@@ -45,13 +45,14 @@ class AdsenseBuilder
         return view('adsense::ads')->with([
             'ad_client' => config('adsense.client_id'),
             'ad_style' => config("adsense.ads.$unit.ad_style", 'display:block;'),
-            'ad_slot' => config("adsense.ads.$unit.ad_unit_id"),
-            'ad_format' => config("adsense.ads.$unit.ad_format", null),
+            'ad_slot' => config("adsense.ads.$unit.ad_slot"),
+            'ad_format' => config("adsense.ads.$unit.ad_format"),
+            'ad_full_width_responsive' => config("adsense.ads.$unit.ad_full_width_responsive"),
         ]);
     }
 
     public function javascript()
     {
-        return view('adsense::javascript');
+        return view('adsense::javascript', ['client_id' => config('adsense.client_id')]);
     }
 }

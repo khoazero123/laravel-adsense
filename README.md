@@ -26,19 +26,22 @@ composer require martinbutt/laravel-adsense
 
 Run `php artisan config:publish martinbutt/laravel-adsense`.
 
-Edit the generated config file in `/config/adsense-ads.php` to add your ad units
+Edit the generated config file in `/config/adsense.php` to add your ad units
 
 ```php
 return [
     'client_id' => 'YOUR_CLIENT_ID', //Your Adsense client ID e.g. ca-pub-9508939161510421
     'ads' => [
         'responsive' => [
-            'ad_unit_id' => 12345678901,
-            'ad_format' => 'auto'
+            'ad_slot' => 1111111111,
+            'ad_format' => 'fluid',
+            'ad_full_width_responsive' => true,
+            'ad_style' => 'display:inline-block'
         ],
         'rectangle' => [
-            'ad_unit_id' => 1234567890,
+            'ad_slot' => 2222222222,
             'ad_style' => 'display:inline-block;width:300px;height:250px',
+            'ad_full_width_responsive' => false,
             'ad_format' => 'auto'
         ]
     ]
@@ -124,9 +127,9 @@ or
 php artisan vendor:publish --provider="MartinButt\Laravel\Adsense\Providers\AdsenseServiceProvider"
 ```
 
-> Lumen does not support this command, for it you should copy the file `src/resources/config/adsense-ads.php` to `config/adsense-ads.php` of your project.
+> Lumen does not support this command, for it you should copy the file `src/resources/config/adsense.php` to `config/adsense.php` of your project.
 
-In `adsense-ads.php` configuration file you can determine the properties of the default values and some behaviors.
+In `adsense.php` configuration file you can determine the properties of the default values and some behaviors.
 
 ## Usage
 Add `{!! Adsense::javascript() !!}` in your `<head>` tag.

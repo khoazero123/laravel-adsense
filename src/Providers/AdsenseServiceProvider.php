@@ -60,7 +60,7 @@ class AdsenseServiceProvider extends ServiceProvider
         } else {
             // Publishing the configuration file.
             $this->publishes([
-                $this->getConfigFile() => config_path('adsense-ads.php'),
+                $this->getConfigFile() => config_path('adsense.php'),
             ], 'config');
             // Publishing the views.
             $this->publishes([
@@ -102,6 +102,6 @@ class AdsenseServiceProvider extends ServiceProvider
      */
     protected function getConfigFile(): string
     {
-        return __DIR__.'/../resources/config/adsense-ads.php';
+        return __DIR__ . '/../resources/config/adsense.php';
     }
 }
