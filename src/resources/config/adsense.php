@@ -50,5 +50,5 @@ return [
             'ad_full_width_responsive' => false,
             'ad_format' => 'auto',
         ],
-    ]
+    ],
 ];
