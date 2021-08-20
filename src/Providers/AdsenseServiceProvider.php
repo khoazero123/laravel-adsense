@@ -102,6 +102,6 @@ class AdsenseServiceProvider extends ServiceProvider
      */
     protected function getConfigFile(): string
     {
-        return __DIR__ . '/../resources/config/adsense.php';
+        return __DIR__.'/../resources/config/adsense.php';
     }
 }
