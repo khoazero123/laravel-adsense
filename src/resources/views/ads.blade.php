@@ -5,6 +5,9 @@
      @if(isset($ad_client))
      data-ad-client="{!! $ad_client !!}"
      @endif
+     @if(isset($ad_test) && $ad_test)
+     data-adtest="on"
+     @endif
      @if(isset($ad_slot))
      data-ad-slot="{!! $ad_slot !!}"
      @endif

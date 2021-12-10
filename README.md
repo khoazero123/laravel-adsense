@@ -31,6 +31,7 @@ Edit the generated config file in `/config/adsense.php` to add your ad units
 ```php
 return [
     'client_id' => 'YOUR_CLIENT_ID', //Your Adsense client ID e.g. ca-pub-9508939161510421
+    'test' => false, // if true client_id = ca-google
     'ads' => [
         'responsive' => [
             'ad_slot' => 1111111111,

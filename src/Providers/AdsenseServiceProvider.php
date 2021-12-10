@@ -79,6 +79,11 @@ class AdsenseServiceProvider extends ServiceProvider
             'adsense'
         );
 
+        $config = $this->app->make('config');
+        if ($config->get('adsense.test', false)) {
+            $config->set('adsense.client_id', 'ca-google');
+        }
+
         $this->app->bind(AdsenseBuilder::class, function () {
             return new AdsenseBuilder();
         });

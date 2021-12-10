@@ -44,6 +44,7 @@ class AdsenseBuilder
     {
         return view('adsense::ads')->with([
             'ad_client' => config('adsense.client_id'),
+            'ad_test' => config('adsense.test', false),
             'ad_style' => config("adsense.ads.$unit.ad_style", 'display:block;'),
             'ad_slot' => config("adsense.ads.$unit.ad_slot"),
             'ad_format' => config("adsense.ads.$unit.ad_format"),
